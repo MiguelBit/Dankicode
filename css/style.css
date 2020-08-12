@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none
+}
+
+.center{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #1A1A1D;
+    padding: 13px 0;
+}
+
+header > .center{
+    display: flex;
+}
+
+.desktop-logo{
+    color: white;
+    font-size: 22px;
+    width: 50%;
+}
+
+.desktop-logo b{
+    color: #C3073F;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.desktop-menu{
+    text-align: right;
+    width: 50%;
+}
+
+.desktop-menu ul{
+    list-style-type: none;
+}
+
+.desktop-menu li{
+    margin-right: 13px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.desktop-menu a{
+    color: white;
+}
+
+.desktop-menu a:hover{
+    color: rgb(160, 160, 160);
+}
+
+section.texto-chamada{
+    background-color: #1f1f22;
+    padding: 30px 0;
+    text-align: center;
+}
+
+section.texto-chamada i{
+    color: white;
+    font-size: 42px;
+}
+
+section.texto-chamada h2, h3{
+    font-weight: normal;
+    padding: 3px 0;
+    color: white;
+}
+
+section.texto-chamada h2 > b{
+	color: #C3073F;
+}
+
+section.loja{
+    padding: 30px 0;
+    background-color: #1f1f22;
+    color: white;
+}
+
+section.loja > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loja-wraper{
+	width: 33.3%;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.box-single-loja{
+	height: 100%;
+    border: 2px solid #6F2232;
+}
+
+.box-single-loja img{
+	max-width: 100%;
+}
+
+.box-single-loja h2{
+	text-align: center;
+	padding:0 8px;
+    font-weight: normal;
+
+}
+
+.box-single-loja p{
+	padding:15px 8px;
+	font-size: 15px;
+}
+
+.loja-wraper a{
+	color: white;
+	background: #950740;
+	padding: 10px 8px;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.loja-wraper b{
+    color: #C3073F;
+}
+
+footer{
+    background-color: #1A1A1D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .desktop-logo{
+        display: none;
+    }
+
+    .desktop-menu{
+        display: none;
+    }
+
+    .mobile-logo{
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin: 0 auto;
+    }
+    
+    .mobile-logo b{
+        color: #C3073F;
+    }
+
+    .mobile-menu{
+        display: block;
+        text-align: right;
+    }
+    
+    .mobile-menu ul{
+        display: none;
+        background-color: #252525;
+        position: absolute;
+        left: -2%;
+        top: 60px;
+        width: 102%;
+        text-align: center;
+    }
+    
+    .mobile-menu li{
+        padding: 8px 0;
+        border-top: 1px solid #950740;
+    }
+
+    .mobile-menu h3 i{
+        cursor: pointer;
+    }
+
+    .mobile-menu a{
+        color: white;
+    }
+
+    .loja-wraper{
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        margin:30px auto;
+    }
+}
